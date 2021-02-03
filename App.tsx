@@ -6,8 +6,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import Top from "./components/top/top";
 import TopContent from "./components/top/top-contents";
-import { Login } from "./Auth/login-component";
-import { SignIn } from "./Auth/signin-component";
+import { Login } from "./auth/login-component";
+import { SignIn } from "./auth/signin-component";
+import Post from "./components/post/post-screen"
 
 const Stack = createStackNavigator();
 
@@ -15,9 +16,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="TopContent" component={TopContent} />
+        {/* <Stack.Screen name="TopContent" component={TopContent} />
         <Stack.Screen name="Login" component={Login} />
-        <Stack.Screen name="SignIn" component={SignIn} />
+        <Stack.Screen name="SignIn" component={SignIn} /> */}
+        <Stack.Screen name="Post" component={Post} />
       </Stack.Navigator>
     </NavigationContainer>
   );
