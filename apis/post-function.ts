@@ -3,7 +3,7 @@ import firebase from "../auth/firebase";
 export interface PostPayload {
   title: string;
   caption: string;
-  postDate: Date;
+  postDate: Date | null;
   updateDate: Date | null;
 }
 
