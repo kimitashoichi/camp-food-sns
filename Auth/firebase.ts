@@ -1,3 +1,5 @@
+// TODO: このファイルの配置場所を変更する
+// TODO: firebaseに関する変数は環境変数ファイルに記述するようにする
 import firebase from "firebase";
 
 const firebaseConfig = {
