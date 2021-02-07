@@ -10,6 +10,7 @@ import { Login } from "./auth/login-component";
 import { SignIn } from "./auth/signin-component";
 import Post from "./components/post/post-screen"
 import DeleteButton from "./components/data-manipulation/delete-button";
+import EditFrom from "./components/data-manipulation/edit-form";
 
 const Stack = createStackNavigator();
 
@@ -22,7 +23,7 @@ export default function App() {
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignIn" component={SignIn} /> */}
         {/* <Stack.Screen name="Post" component={Post} /> */}
-        <Stack.Screen name="DeleteButton" component={DeleteButton} />
+        <Stack.Screen name="EditFrom" component={EditFrom} />
       </Stack.Navigator>
     </NavigationContainer>
   );
