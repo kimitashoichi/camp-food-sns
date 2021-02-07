@@ -9,6 +9,7 @@ import TopContent from "./components/top/top-contents";
 import { Login } from "./auth/login-component";
 import { SignIn } from "./auth/signin-component";
 import Post from "./components/post/post-screen"
+import DeleteButton from "./components/data-manipulation/delete-button";
 
 const Stack = createStackNavigator();
 
@@ -16,11 +17,12 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="TopClassComponent" component={TopClassComponent} />
+        {/* <Stack.Screen name="TopClassComponent" component={TopClassComponent} /> */}
         {/* <Stack.Screen name="TopContent" component={TopContent} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="SignIn" component={SignIn} /> */}
         {/* <Stack.Screen name="Post" component={Post} /> */}
+        <Stack.Screen name="DeleteButton" component={DeleteButton} />
       </Stack.Navigator>
     </NavigationContainer>
   );
